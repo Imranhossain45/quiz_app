@@ -29,20 +29,22 @@ quit_quiz.onclick = () => {
   window.location.reload();
 }
 restart_quiz.onclick = () => {
+
+
+  myOptions.classList.add("activeQuiz");
+  result_box.classList.remove("activeResult");
   let que_count = 0;
-  let counter;
   let timeValue = 15;
-  let counterLine;
+
   let widthValue = 0;
-  que_count++;
+  let userScore = 0;
   showQuestions(que_count);
   clearInterval(counter);
-  startTimer(timeValue);
-
+  startTimer(timeValue)
   clearInterval(counterLine);
   startTimerLine(widthValue);
-
   nextBtn.style.display = "none";
+  timeOff.textContent = "Time Left";
 }
 let que_count = 0;
 let counter;
