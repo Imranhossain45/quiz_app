@@ -28,6 +28,7 @@ contnueBtn.onclick = () => {
 quit_quiz.onclick = () => {
   window.location.reload();
 }
+
 restart_quiz.onclick = () => {
 
 
